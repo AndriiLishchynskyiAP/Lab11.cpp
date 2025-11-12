@@ -9,14 +9,3 @@ Filter::Filter(string n, double f, double r, double c) {
 }
 
 Filter::~Filter() {}
-
-void Filter::showInfo() const {
-    cout << "Назва фільтра: " << data.name << endl;
-    cout << "Частота зрізу: " << data.cutoffFrequency << " Гц" << endl;
-    cout << "Опір: " << data.resistance << " Ом" << endl;
-    cout << "Ємність: " << data.capacitance << " Ф" << endl;
-}
-
-FilterData Filter::getData() const {
-    return data;
-}
